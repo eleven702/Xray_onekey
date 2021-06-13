@@ -3,7 +3,7 @@
 #====================================================
 #	System Request:Debian 9+/Ubuntu 18.04+/Centos 7+
 #	Author:	wulabing
-#	Dscription: Xray onekey Management
+#	Dscription: Xray onekey Managementggf
 #	email: admin@wulabing.com
 #====================================================
 
@@ -458,7 +458,7 @@ function generate_certificate() {
 function configure_web() {
   rm -rf /www/xray_web
   mkdir -p /www/xray_web
-  wget -O web.tar.gz https://github.com/eleven702/web/main/web.tar.gz
+  wget -O web.tar.gz https://github.com/eleven702/web/blob/main/web.tar.gz
   tar xzf web.tar.gz -C /www/xray_web
   judge "站点伪装"
   rm -f web.tar.gz
