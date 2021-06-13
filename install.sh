@@ -384,7 +384,7 @@ function acme() {
   sed -i "6a\\\troot $website_dir;" "$nginx_conf"
   systemctl restart nginx
 
-  if "$HOME"/.acme.sh/acme.sh --server https://api.buypass.com/acme/directory --register-account --accountemail 'tamggaagly684843@gmail.com'; then
+  if "$HOME"/.acme.sh/acme.sh --server https://api.buypass.com/acme/directory --register-account --accountemail tamggaagly684843@gmail.com; then
     print_ok "acme 账号注册成功"
     sleep 1
   else
