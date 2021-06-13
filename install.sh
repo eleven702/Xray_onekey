@@ -458,7 +458,7 @@ function generate_certificate() {
 function configure_web() {
   rm -rf /www/xray_web
   mkdir -p /www/xray_web
-  wget -O web.tar.gz https://github.com/eleven702/web/blob/main/web.tar.gz
+  wget -O web.tar.gz https://raw.githubusercontent.com/eleven702/yb702/main/basic/web.tar.gz
   tar xzf web.tar.gz -C /www/xray_web
   judge "站点伪装"
   rm -f web.tar.gz
